@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+/* "Square" é uma classe de componente porque estende o React.Component. */
 class Square extends React.Component {
     render() {
         return (
@@ -10,6 +11,7 @@ class Square extends React.Component {
     }
 }
 
+/* O Board renderiza 9 quadrados e os quadrados renderizam um X ou um O quando clicados. */
 class Board extends React.Component {
     renderSquare(i) {
         return <Square />
@@ -41,6 +43,7 @@ class Board extends React.Component {
     }
 }
 
+/* O componente Game renderiza um Board com valores de placeholder por enquanto. */
 class Game extends React.Component {
     render() {
         return (
