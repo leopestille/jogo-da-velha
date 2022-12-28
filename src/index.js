@@ -59,3 +59,7 @@ class Game extends React.Component {
         );
     }
 }
+
+/* É uma nova funcionalidade no React 16.8. Ela permite que você renderize um elemento React para um nó DOM fora da árvore normal do React. */
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Game />);
